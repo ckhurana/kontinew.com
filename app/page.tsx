@@ -56,8 +56,8 @@ export default function Home() {
         ></motion.div>
       </div>
       <Link
-        className="absolute bottom-24 border p-4 px-6 rounded-md border-gray-700"
-        href="http://apps.kontinew.com"
+        className="absolute bottom-24 border p-4 px-6 rounded-md border-gray-700 cursor-none"
+        href="https://apps.kontinew.com"
       >
         Apps
       </Link>
