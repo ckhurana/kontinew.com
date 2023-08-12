@@ -35,7 +35,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center bg-slate-50 overflow-x-clip cursor-none">
+    <main className="flex flex-col min-h-screen items-center justify-center bg-slate-50 overflow-x-clip md:cursor-none">
       <div className="relative w-full h-72 max-w-lg">
         <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
         <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -49,6 +49,11 @@ export default function Home() {
             kontinew
           </p>
         </div>
+        <motion.div
+          className="md:block hidden fixed left-0 top-0 bg-black rounded-full w-[32px] h-[32px] pointer-events-none"
+          variants={variants as any}
+          animate={cursorVariant}
+        ></motion.div>
       </div>
       <Link
         className="absolute bottom-24 border p-4 px-6 rounded-md border-gray-700"
@@ -56,11 +61,6 @@ export default function Home() {
       >
         Apps
       </Link>
-      <motion.div
-        className="fixed left-0 top-0 bg-black rounded-full w-[32px] h-[32px] pointer-events-none"
-        variants={variants as any}
-        animate={cursorVariant}
-      ></motion.div>
     </main>
   );
 }
