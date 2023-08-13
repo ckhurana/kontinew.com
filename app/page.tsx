@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <Link
         className="absolute bottom-24 border p-4 px-6 rounded-md border-gray-700 cursor-none"
-        href="https://apps.kontinew.com"
+        href="https://chiragkhurana.com"
       >
         Apps
       </Link>
